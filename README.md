@@ -1,5 +1,5 @@
 # workday-scheduler
-A simple calendar app for scheduling user work day
+A simple calendar app for scheduling user work day.
 
 ## Table of Conetents
 1. Descriptions 
@@ -17,7 +17,7 @@ Work Day Scheduler. Displays color-coded input area according to the current tim
 ![Work Day Scheduler](./assets/images/workday-page.png)
 
 ```pip
-User will be able type in their notes and save them in the app.
+User will be able to type in their notes and save them in the app.
 ```
 ![Work Day Scheduler Note](./assets/images/workday-note.png)
 
