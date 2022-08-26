@@ -24,9 +24,9 @@ $('.note').each(function () {
     $(this).val(textArea);
 
     // color-coded coordinating with current time 
-    if(parentId < currentTime){$(this).css("background-color", '#d3d3d3', "color", "white");}
-    if(parentId == currentTime){$(this).css("background-color", '#ff6961', 'color', 'white');}
-    if(parentId > currentTime){$(this).css("background-color", '#77dd77', 'color', 'white');}
+    if(parentId < currentTime){$(this).css("background-color", '#d3d3d3');}
+    if(parentId == currentTime){$(this).css("background-color", '#ff6961');}
+    if(parentId > currentTime){$(this).css("background-color", '#77dd77');}
 });
 
 
