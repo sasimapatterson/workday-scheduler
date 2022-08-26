@@ -3,9 +3,10 @@ var scheduleForm = $('.scheduler');
 var textArea = $('.note');
 var saveIcon = $('.saveBtn');
 
+// moment.js to get current time and date
 today.textContent = moment().format('dddd, MMMM, Do YYYY, hh:mm:ss a');
 
-
+// local storage 
 $('.scheduler').on('click', '.saveBtn', function (event) {
     var parentId = $(event.target).parent().attr('data-id');
     console.log(parentId);
@@ -22,6 +23,7 @@ $('.note').each(function () {
     var textArea = localStorage.getItem(parentId);
     $(this).val(textArea);
 
+    // color-coded coordinating with current time 
     if(parentId < currentTime){$(this).css("background-color", '#d3d3d3');}
     if(parentId == currentTime){$(this).css("background-color", '#ff6961');}
     if(parentId > currentTime){$(this).css("background-color", '#77dd77');}
