@@ -8,7 +8,7 @@ today.textContent = moment().format('dddd, MMMM, Do YYYY, hh:mm:ss a');
 
 // local storage 
 $('.scheduler').on('click', '.saveBtn', function (event) {
-    var parentId = $(event.target).parent().attr('data-id');
+    var parentId = $(this).parent().attr('data-id');
     console.log(parentId);
     var textArea = $(this).prev().val();
     console.log(textArea);
@@ -24,9 +24,9 @@ $('.note').each(function () {
     $(this).val(textArea);
 
     // color-coded coordinating with current time 
-    if(parentId < currentTime){$(this).css("background-color", '#d3d3d3');}
-    if(parentId == currentTime){$(this).css("background-color", '#ff6961');}
-    if(parentId > currentTime){$(this).css("background-color", '#77dd77');}
+    if(parentId < currentTime){$(this).css("background-color", '#d3d3d3', "color", "white");}
+    if(parentId == currentTime){$(this).css("background-color", '#ff6961', 'color', 'white');}
+    if(parentId > currentTime){$(this).css("background-color", '#77dd77', 'color', 'white');}
 });
 
 
