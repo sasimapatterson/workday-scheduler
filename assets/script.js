@@ -1,13 +1,13 @@
 var today = document.querySelector('#currentDay');
-var scheculeForm = $('.scheduler');
+var scheduleForm = $('.scheduler');
 var textArea = $('.note');
-var saveIcon = $('.save-icon');
+var saveIcon = $('.saveBtn');
 
 today.textContent = moment().format('dddd, MMMM, Do YYYY, hh:mm:ss a');
 
-// text in
-$('.schedule').on('click', '.save-icon', function () {
-    var parentId = $(this).parent().attr('data-id');
+
+$('.scheduler').on('click', '.saveBtn', function (event) {
+    var parentId = $(event.target).parent().attr('data-id');
     console.log(parentId);
     var textArea = $(this).prev().val();
     console.log(textArea);
